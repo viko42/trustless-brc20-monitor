@@ -1,7 +1,7 @@
 
 # Token Price Monitoring - AI Generated project
 
-This project enables monitoring of BRC-20 tokens for price changes and sends alerts via WhatsApp. It fetches token price data from contracts and compares the prices at different intervals to detect significant drops in real-time or over a one-hour period.
+This project enables monitoring of BRC-20 tokens for price changes and sends alerts via WhatsApp using [Twilio](https://www.twilio.com/docs/autopilot/channels/whatsapp#maincontent). It fetches token price data from contracts and compares the prices at different intervals to detect significant drops in real-time or over a one-hour period.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ This project enables monitoring of BRC-20 tokens for price changes and sends ale
 
 ## Usage
 
-1. Set up your WhatsApp alert service by providing the necessary credentials in the `.env.example` file.
+1. Set up your WhatsApp alert service by providing the necessary twilio credentials in the `.env.example` file.
 
 2. Rename the file `.env.example` into `.env`.
 
