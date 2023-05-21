@@ -30,12 +30,9 @@ const startMonitorForToken = async (contractAddr: string) => {
 
          if (percentageDifferenceFast.status === 'DOWN' && percentageDifferenceFast.percentageDifference >= 10 ) {
             await sendWhatsappAlert(
-                `
-                🚨 Price Alert: CryptoCurrency ${contractData.symbol} 🚨
+                `🚨 Price Alert: CryptoCurrency $${contractData.symbol} 🚨
                 💥 Price Drop Real-time ! 💥
-                CryptoCurrency ${contractData.symbol} has experienced a significant price drop of -${percentageDifferenceFast.percentageDifference}%! 😱
-                Keep an eye on the market and take advantage of this opportunity! 📈📉
-                `
+                CryptoCurrency $${contractData.symbol} has experienced a significant price drop of -${percentageDifferenceFast.percentageDifference}%! From ${priceToken} to ${priceTokenToBeUpdated} 😱`
             );
          }
 
@@ -44,11 +41,9 @@ const startMonitorForToken = async (contractAddr: string) => {
 
             if (percentageDifferenceSlow.status === 'DOWN' && percentageDifferenceSlow.percentageDifference >= 10 ) {
                 await sendWhatsappAlert(
-                    `
-                    🚨 Price Alert: CryptoCurrency ${contractData.symbol} 🚨
-                    💥 Price Drop ~1 hour time ! 💥
-                    CryptoCurrency ${contractData.symbol} has experienced a significant price drop of -${percentageDifferenceSlow.percentageDifference}%! 😱
-                    `
+                    `🚨 Price Alert: CryptoCurrency $${contractData.symbol} 🚨
+                💥 Price Drop ~1 hour time ! 💥
+                CryptoCurrency $${contractData.symbol} has experienced a significant price drop of -${percentageDifferenceSlow.percentageDifference}%! From ${priceToken} to ${priceTokenToBeUpdated} 😱`
                 );
              }
     
