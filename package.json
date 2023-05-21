@@ -1,0 +1,28 @@
+{
+  "name": "trustless-brc20-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viko42/trustless-brc20-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viko42/trustless-brc20-monitor/issues"
+  },
+  "homepage": "https://github.com/viko42/trustless-brc20-monitor#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "twilio": "^4.11.1"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/node": "^20.2.1"
+  }
+}
