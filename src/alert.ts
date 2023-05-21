@@ -8,7 +8,7 @@ export const sendWhatsappAlert = async (message: string) => {
     await client.messages
     .create({
         body: message,
-        from: 'whatsapp:+14155238886',
-        to: process.env.TWILIO_NB as string,
+        from: process.env.TWILIO_NB_FROM as string,
+        to: process.env.TWILIO_NB_TO as string,
     });
 }
