@@ -105,3 +105,8 @@ export type TrustLessFetchPriceResponse = {
         "base_token_symbol":string;
     }[];
 }
+
+export enum PeriodAlert {
+  realTime = "realtime",
+  oneHour =  "oneHour",
+}
