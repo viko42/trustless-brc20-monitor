@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import { TrustLessTradeHistoriesResponse, TrustLessFetchPriceResponse } from './index.d';
+import { TrustLessTradeHistoriesResponse, TrustLessFetchPriceResponse } from './types';
 
 export const fetchPriceContract = async (contractAddr: string) => {
     const url = `https://dapp.trustless.computer/dapp/api/swap/token/report?address=${contractAddr}`;

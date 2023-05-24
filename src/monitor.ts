@@ -1,4 +1,4 @@
-import { PeriodAlert } from "./index.d";
+import { PeriodAlert } from "./types";
 import { sendAlert, sendWhatsappAlert } from "./alert";
 import { Tokens, contracts } from "./contracts";
 import { fetchPriceContract } from "./fetchTransactions";

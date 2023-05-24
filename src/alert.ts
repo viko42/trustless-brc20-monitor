@@ -1,5 +1,5 @@
 import twilio from "twilio";
-import { PeriodAlert } from "./index.d";
+import { PeriodAlert } from "./types";
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
